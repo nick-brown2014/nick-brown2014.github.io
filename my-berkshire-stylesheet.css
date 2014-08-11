@@ -1,0 +1,64 @@
+body {
+	color: #000080;
+}
+#header {
+	text-align: center;
+	font-weight: bold;
+    line-height: 2px;
+}
+li {
+	font-size: 0.6em;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+a:link {
+	color: 800080;
+	font-size: 1em;
+}
+a:visited {
+	color: ff0000;
+	font-size: 1em;
+}
+body {
+	background-color: ffffff;
+}	
+.bigger {
+	font-size: 2em;
+}
+#first_line {
+    border: 1px solid black;
+    border-top: white;
+}
+#second_line {
+    border: 1px solid black;
+    border-top: white;
+    margin-bottom: 10px;
+}
+#third_line {
+    border: 1px solid black;
+    border-top: white;
+}
+#fourth_line {
+    border: 1px solid black;
+    border-top: white;
+}
+.float_left {
+    float: left;
+    width: 45%
+}
+.float_right {
+    float: right;
+    width: 45%
+}
+.subtext {
+    font-size: 0.75em;
+}
+.bottom {
+    text-align: center;
+    margin: auto;
+    clear: both;
+}
+#geico {
+    line-height: 1px;
+}
