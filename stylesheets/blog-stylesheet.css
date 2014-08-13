@@ -21,7 +21,7 @@ h2 {
     font-weight: bold;
     font-family: papyrus;
     position: relative;
-    top: -50px;
+    top: -45px;
     width: 100%
 }
 nav {
@@ -42,12 +42,28 @@ main {
     display: inline-block;
     position: relative;
 }
-.container {
+.foot_container {
+    display: inline-block;
+    top: -50px;
     float: right;
-    height: 100px
-    width: 50px    
+    height: 42px
+    width: 80px    
 }
-.container img {
+.foot_container img {
     width: auto;
-    height: 100px;
+    height: 42px;
+}
+footer p {
+    display: inline-block;
+    width: 40%;
+}
+#border_top {
+    position: relative;
+    top: 5px;
+    border: 1px solid black;
+}
+#border_bot {
+    position: relative;
+    top: -5px;
+    border: 1px solid black;
 }
