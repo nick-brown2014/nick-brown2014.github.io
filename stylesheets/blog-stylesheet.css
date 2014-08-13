@@ -1,11 +1,11 @@
 * {
-    border: 1px solid black;
     box-sizing: border-box;
 }
 body {
     background-color: #fdfdfd;
 }
 header {
+    margin-bottom: 0px;
     position: relative;
     display: inline-block;
     width: 40%
@@ -35,6 +35,7 @@ li {
     letter-spacing: 0.1em;
 }
 main {
+    margin-top: -50px;
     background-color: #fdfdfd;
     font-family: garamond;
     width: 80%; 
