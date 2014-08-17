@@ -82,3 +82,10 @@ h6 {
     top: 29%;
     left: 79%;
 }
+#prof_pic {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+}
