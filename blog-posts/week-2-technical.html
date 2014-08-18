@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+        <title>Blog Post</title>
+    </head>
+    <body>
+        <header>
+            <h5>Nick's Blog!</h5>
+        </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a> - </li>
+                    <li><a href="about_me.html">About Me</a> - </li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav> 
+         <div id="border_top"></div>
+            <h2>The Difference Between Relative, Absolute and Fixed Positioning</h2>
+        <main>
+            <p>The difference between Relative and Absolute positioning can be a littl bit difficult to grasp.  If we keep the DOM (Document Object Model) in mind though, the rules that divide these two classes become easier to understand.<br>The DOM is a map, put simply, that keeps track of each elements parent element and all of its children.  For example, the html tag is the parent of every page, and the body tag is a common child within html.  Then there might be some text in paragraphs, or p tags, that are contained by the body tag.  The DOM is the schematic that lets us see that body's parent is html, and its children are the paragraphs.<br>Now why is this important for positioning?<br>Elements in a browser are displayed in relation to the elements around them, and are affected by their position in the DOM.  If you don't know what the parent is of the element you are trying to position, then you will struggle to make it go where you want it to.<br>Absolute positioning is a great example of how knowing your parent element is key to good code.  It displays your object relation to placement of its parent element.  Picture that you have two squares on your page, a large square and a smaller square.  If the smaller square has absolute positioning, then it will naturally fall inside the top left corner of the larger square.  It's original position will be determined by the location of its parent element.  Do you see why keeping track of the DOM is important now?<br>Now I cheated in that last example, because I made an assumption about the larger square.  Imagine that there were actually three squares of escalating size, and the second square also has absolute positioning.  The third square would not be positioned based off the middle square, because elements with absolute positioning do not interact positionaly with any elements except for their parents.  That means that both of the smaller squares would be positioned based off of the largest square, assuming that it has Relative positioning.<br>That right there is the key difference betwen absolute and relative conditioning: Relative elements interact with their children and other siblings.  Absolute elements only interact with their parents, and can not be positioned off of.<br>Think of relative elements as a cork board that can have absolute elements pinned to it.<br>Fixed positioning is simpler.  Fixed elements behave like absolute elements, holding a certain position in relation to a parent.  The difference is that fixed elements are always reacting to the html parent, and hold their place no matter what you are doing to the page.  Picture a website with a box on the bottom left hadn corner.  Now imagine that you are scrolling up and down the page and the box is staying in the exact same spot.  That's how a fixed element works.<br></p>   
+        </main> 
+        <div id="border_bot"></div>
+        <footer>
+            <p>     Copyright 2014, Nick Brown</p>
+            <div class="foot_container">
+                  <a href="https://twitter.com/SunnyBrownCC"><img src="https://raw.githubusercontent.com/nick-brown2014/nick-brown2014.github.io/master/blog-posts/imgs/twitter-bird.png"/></a>
+            </div>
+            <div class="foot_container">
+                <a href="mailto:nick.brown2014@gmail.com?Subject=Hello"><img src="https://raw.githubusercontent.com/nick-brown2014/nick-brown2014.github.io/master/blog-posts/imgs/email_logo.gif"/></a>
+            </div>
+            <div class="foot_container">
+                <a href="https://facebook.com"><img src="https://raw.githubusercontent.com/nick-brown2014/nick-brown2014.github.io/master/blog-posts/imgs/facebook_logo.png"/></a>
+            </div>
+            <div class="foot_container">
+                <a href="https://github.com/nick-brown2014"><img src="https://raw.githubusercontent.com/nick-brown2014/nick-brown2014.github.io/master/blog-posts/imgs/github_logo.jpg"/></a>
+            </div>
+        </footer>    
+    </body>
+</html>
